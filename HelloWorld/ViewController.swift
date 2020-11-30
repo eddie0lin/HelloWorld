@@ -62,16 +62,16 @@ class ViewController: UIViewController {
             }
         }
         //AlertMessage:AlertController.addAction 然後 present
-        //        let alertController = UIAlertController(title: "Welcome my 1st app", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
-        //        alertController.addAction(UIAlertAction(title: "you got \(msg)", style: UIAlertAction.Style.default, handler: nil))
-        //        present(alertController, animated: true, completion: nil)
+        let alertController = UIAlertController(title: "Welcome my 1st app", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "you got \(msg)", style: UIAlertAction.Style.default, handler: nil))
+        present(alertController, animated: true, completion: nil)
         
         // alt + UIAlertController 有範例
-        let alert = UIAlertController(title: "My Alert", message: "This is an alert on my App.", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default,
-            handler: { _ in NSLog("The \"OK\" alert occured.")
-        }))
-        self.present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: "My Alert", message: "This is an alert on my App.", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default,
+//            handler: { _ in NSLog("The \"OK\" alert occured.")
+//        }))
+//        self.present(alert, animated: true, completion: nil)
     }
 }
 
